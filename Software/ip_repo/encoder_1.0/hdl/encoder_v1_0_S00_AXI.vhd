@@ -355,7 +355,7 @@ begin
 	    loc_addr := axi_araddr(ADDR_LSB + OPT_MEM_ADDR_BITS downto ADDR_LSB);
 	    case loc_addr is
 	      when b"00" =>
-	        reg_data_out <= slv_reg0;
+	        reg_data_out <= std_logic_vector(Count);
 	      when b"01" =>
 	        reg_data_out <= slv_reg1;
 	      when b"10" =>
