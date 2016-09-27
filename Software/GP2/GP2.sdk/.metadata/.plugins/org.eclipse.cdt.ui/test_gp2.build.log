@@ -1,6 +1,21 @@
-15:39:40 **** Incremental Build of configuration Debug for project test_gp2 ****
+22:54:21 **** Auto Build of configuration Debug for project test_gp2 ****
 make all 
-make: Rien à faire pour « all ».
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_gp2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_gp2.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_gp2_bsp/ps7_cortexa9_0/lib -o "test_gp2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_gp2.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test_gp2.elf  |tee "test_gp2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68348	   2336	  22668	  93352	  16ca8	test_gp2.elf
+'Finished building: test_gp2.elf.size'
+' '
 
-15:39:41 Build Finished (took 274ms)
+22:54:22 Build Finished (took 640ms)
 

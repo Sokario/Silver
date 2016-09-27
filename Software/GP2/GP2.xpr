@@ -34,16 +34,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="test_gp2.bd" FileRelPathName="hdl/test_gp2.vhd"/>
-        <CompFileExtendedInfo CompFileName="test_gp2.bd" FileRelPathName="ip/test_gp2_rst_processing_system7_0_100M_0/test_gp2_rst_processing_system7_0_100M_0.xci"/>
-        <CompFileExtendedInfo CompFileName="test_gp2.bd" FileRelPathName="ip/test_gp2_processing_system7_0_axi_periph_0/test_gp2_processing_system7_0_axi_periph_0.xci"/>
-        <CompFileExtendedInfo CompFileName="test_gp2.bd" FileRelPathName="ip/test_gp2_processing_system7_0_0/test_gp2_processing_system7_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="test_gp2.bd" FileRelPathName="ip/test_gp2_xadc_wiz_0_1/test_gp2_xadc_wiz_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="test_gp2.bd" FileRelPathName="hw_handoff/test_gp2.hwh"/>
-        <CompFileExtendedInfo CompFileName="test_gp2.bd" FileRelPathName="hdl/test_gp2.hwdef"/>
-        <CompFileExtendedInfo CompFileName="test_gp2.bd" FileRelPathName="hw_handoff/test_gp2_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="test_gp2.bd" FileRelPathName="ip/test_gp2_auto_pc_0/test_gp2_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="test_gp2.bd" FileRelPathName="test_gp2_ooc.xdc"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/test_gp2/hdl/test_gp2_wrapper.vhd">
         <FileInfo>

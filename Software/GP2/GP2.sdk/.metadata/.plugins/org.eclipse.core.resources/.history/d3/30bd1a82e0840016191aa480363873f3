@@ -51,16 +51,15 @@
 #include "sleep.h"
 
 #define SYSMON_DEVICE_ID XPAR_SYSMON_0_DEVICE_ID //ID of xadc_wiz_0
-static XSysMon SysMonInst; //a sysmon instance
-/*#define XSysMon_RawToExtVoltage(AdcData) \
+#define XSysMon_RawToExtVoltage(AdcData) \
 ((((float)(AdcData))*(1.0f))/65536.0f) //(ADC 16bit result)/16/4096 = (ADC 16bit result)/65536
  // voltage value = (ADC 16bit result)/65536 * 1Volt
-static int SysMonFractionToInt(float FloatNum);*/
+static XSysMon SysMonInst; //a sysmon instance
+static int SysMonFractionToInt(float FloatNum);
 
 int main() {
-	/*u32 TempRawData,VccIntRawData,ExtVolRawData;
-	float TempData,VccIntData,ExtVolData;*/
-	int TempData, ExtVolData;
+	u32 TempRawData,VccIntRawData,ExtVolRawData;
+	float TempData,VccIntData,ExtVolData;
 	int xStatus;
 	XSysMon_Config *SysMonConfigPtr;
 	XSysMon *SysMonInstPtr = &SysMonInst;
@@ -70,7 +69,7 @@ int main() {
 	SysMonConfigPtr = XSysMon_LookupConfig(SYSMON_DEVICE_ID);
 	if(SysMonConfigPtr == NULL)
 		printf("LookupConfig FAILURE\n\r");
-	xStatus = XSysMon_CfgInitialize(SysMonInstPtr, SysMonConfigPtr, SysMonConfigPtr->BaseAddress);
+	xStatus = XSysMon_CfgInitialize(SysMonInstPtr, SysMonConfigPtr,SysMonConfigPtr->BaseAddress);
 	if(XST_SUCCESS != xStatus)
 		printf("CfgInitialize FAILED\r\n");
 	//-----------------------------------------------------------------------------------------
@@ -78,32 +77,33 @@ int main() {
 
 	while(1) {
 		while ((XSysMon_GetStatus(SysMonInstPtr) & XSM_SR_EOS_MASK) != XSM_SR_EOS_MASK); // wait until EOS activated
-		TempData = XSysMon_GetAdcData(SysMonInstPtr, XSM_CH_TEMP); // Read the on-chip Temperature Data
-		printf("The Current Temperature is : %d Centigrades.\r\n", TempData);
-		//TempData = XSysMon_RawToTemperature(TempRawData);
-		//printf("The Current Temperature is :%0d.%03d Centigrades.\r\n", (int)(TempData), SysMonFractionToInt(TempData));
-
-		ExtVolData = XSysMon_GetAdcData(SysMonInstPtr,XSM_CH_VPVN); // Read the external Vpn Data
-		printf("The Current VpVn is : %d Volts. \r\n", ExtVolData);
-		//ExtVolData = XSysMon_RawToExtVoltage(ExtVolRawData);
-		//printf("The Current VpVn is %0d.%03d Volts. \r\n", (int)(ExtVolData), SysMonFractionToInt(ExtVolData));
-
-		ExtVolData = XSysMon_GetAdcData(SysMonInstPtr,XSM_CH_AUX_MIN+14); // Read the external Vaux14 Data
-		printf("The Current Vaux14 is : %d Volts. \r\n", ExtVolData);
-		//ExtVolData = XSysMon_RawToExtVoltage(ExtVolRawData);
-		//printf("The Current Vaux14 is %0d.%03d Volts. \r\n", (int)(ExtVolData), SysMonFractionToInt(ExtVolData));
+		TempRawData = XSysMon_GetAdcData(SysMonInstPtr, XSM_CH_TEMP); // Read the on-chip Temperature Data
+		TempData = XSysMon_RawToTemperature(TempRawData);
+		printf("\r\nThe Current Temperature is %0d.%03d Centigrades.\r\n", (int)(TempData), SysMonFractionToInt(TempData));
+		VccIntRawData = XSysMon_GetAdcData(SysMonInstPtr, XSM_CH_VCCINT); // Read the on-chip Vccint Data
+		VccIntData = XSysMon_RawToVoltage(VccIntRawData);
+		printf("The Current VCCINT is %0d.%03d Volts. \r\n", (int)(VccIntData), SysMonFractionToInt(VccIntData));
+		ExtVolRawData = XSysMon_GetAdcData(SysMonInstPtr,XSM_CH_VPVN); // Read the external Vpn Data
+		ExtVolData = XSysMon_RawToExtVoltage(ExtVolRawData);
+		printf("The Current VpVn is %0d.%03d Volts. \r\n", (int)(ExtVolData), SysMonFractionToInt(ExtVolData));
+		ExtVolRawData = XSysMon_GetAdcData(SysMonInstPtr,XSM_CH_AUX_MIN); // Read the external Vaux0 Data
+		ExtVolData = XSysMon_RawToExtVoltage(ExtVolRawData);
+		printf("The Current Vaux0 is %0d.%03d Volts. \r\n", (int)(ExtVolData), SysMonFractionToInt(ExtVolData));
+		ExtVolRawData = XSysMon_GetAdcData(SysMonInstPtr,XSM_CH_AUX_MIN+14); // Read the external Vaux14 Data
+		ExtVolData = XSysMon_RawToExtVoltage(ExtVolRawData);
+		printf("The Current Vaux8 is %0d.%03d Volts. \r\n", (int)(ExtVolData), SysMonFractionToInt(ExtVolData));
 		usleep(200000); // wait 200ms
 	}
 
 	return 0;
 }
 
-/*//----------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------
 int SysMonFractionToInt(float FloatNum) {
 	float Temp;
 	Temp = FloatNum;
 	if (FloatNum < 0)
 		Temp = -(FloatNum);
-	return (((int)((Temp -(float)((int)Temp)) * (1000.0f))));
+	return( ((int)((Temp -(float)((int)Temp)) * (1000.0f))));
 }
-//----------------------------------------------------------------------------------------------*/
+//----------------------------------------------------------------------------------------------
