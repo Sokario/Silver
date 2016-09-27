@@ -1,0 +1,10 @@
+08:27:35 INFO  : Launching XSDB server: xsdb.bat C:/Travail/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+08:27:40 INFO  : XSDB server has started successfully.
+08:27:43 INFO  : Processing command line option -hwspec C:/Travail/Objets/GitHub/Silver/Software/PWM/PWM.sdk/test_pwm_wrapper.hdf.
+08:31:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:31:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+08:31:41 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/PWM/PWM.sdk/test_pwm_wrapper_hw_platform_0/test_pwm_wrapper.bit"
+08:32:02 INFO  : ps7_init is completed.
+08:32:02 INFO  : ps7_post_config is completed.
+08:32:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:33:54 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
