@@ -76,10 +76,8 @@ COMPONENT test_gp2_xadc_wiz_0_1
     ip2intc_irpt : OUT STD_LOGIC;
     vp_in : IN STD_LOGIC;
     vn_in : IN STD_LOGIC;
-    vauxp0 : IN STD_LOGIC;
-    vauxn0 : IN STD_LOGIC;
-    vauxp1 : IN STD_LOGIC;
-    vauxn1 : IN STD_LOGIC;
+    vauxp14 : IN STD_LOGIC;
+    vauxn14 : IN STD_LOGIC;
     user_temp_alarm_out : OUT STD_LOGIC;
     vccint_alarm_out : OUT STD_LOGIC;
     vccaux_alarm_out : OUT STD_LOGIC;
@@ -124,10 +122,8 @@ your_instance_name : test_gp2_xadc_wiz_0_1
     ip2intc_irpt => ip2intc_irpt,
     vp_in => vp_in,
     vn_in => vn_in,
-    vauxp0 => vauxp0,
-    vauxn0 => vauxn0,
-    vauxp1 => vauxp1,
-    vauxn1 => vauxn1,
+    vauxp14 => vauxp14,
+    vauxn14 => vauxn14,
     user_temp_alarm_out => user_temp_alarm_out,
     vccint_alarm_out => vccint_alarm_out,
     vccaux_alarm_out => vccaux_alarm_out,

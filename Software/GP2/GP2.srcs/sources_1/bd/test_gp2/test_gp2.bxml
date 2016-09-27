@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="test_gp2" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1474972046"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1474972046"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1474972046"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1474980838"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1474980838"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1474980838"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\test_gp2_processing_system7_0_0\test_gp2_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
@@ -38,18 +38,18 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
+      <File Name="hdl\test_gp2.vhd" Type="VHDL">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
       <File Name="ip\test_gp2_auto_pc_0\test_gp2_auto_pc_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0_axi_periph/s00_couplers/auto_pc"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="hdl\test_gp2.vhd" Type="VHDL">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="test_gp2_ooc.xdc" Type="XDC">

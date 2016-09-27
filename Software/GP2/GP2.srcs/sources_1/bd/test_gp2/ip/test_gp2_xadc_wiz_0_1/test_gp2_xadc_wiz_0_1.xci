@@ -95,7 +95,7 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_INCLUDE_INTR">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_SAMPLING_RATE">961538.4615384615</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_SEQUENCE_R0">2048</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_SEQUENCE_R1">3</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_SEQUENCE_R1">16384</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_SEQUENCE_R2">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_SEQUENCE_R3">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_SEQUENCE_R4">0</spirit:configurableElementValue>
@@ -105,13 +105,13 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_SIM_FILE_NAME">design</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_SIM_FILE_REL_PATH">./</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_SIM_FILE_SEL">Default</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_VAUX0">1</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_VAUX1">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_VAUX0">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_VAUX1">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_VAUX10">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_VAUX11">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_VAUX12">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_VAUX13">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_VAUX14">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_VAUX14">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_VAUX15">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_VAUX2">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_VAUX3">0</spirit:configurableElementValue>
@@ -189,14 +189,14 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CHANNEL_AVERAGING">None</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CHANNEL_ENABLE_CALIBRATION">false</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CHANNEL_ENABLE_TEMPERATURE">false</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CHANNEL_ENABLE_VAUXP0_VAUXN0">true</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CHANNEL_ENABLE_VAUXP0_VAUXN0">false</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CHANNEL_ENABLE_VAUXP10_VAUXN10">false</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CHANNEL_ENABLE_VAUXP11_VAUXN11">false</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CHANNEL_ENABLE_VAUXP12_VAUXN12">false</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CHANNEL_ENABLE_VAUXP13_VAUXN13">false</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CHANNEL_ENABLE_VAUXP14_VAUXN14">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CHANNEL_ENABLE_VAUXP14_VAUXN14">true</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CHANNEL_ENABLE_VAUXP15_VAUXN15">false</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CHANNEL_ENABLE_VAUXP1_VAUXN1">true</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CHANNEL_ENABLE_VAUXP1_VAUXN1">false</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CHANNEL_ENABLE_VAUXP2_VAUXN2">false</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CHANNEL_ENABLE_VAUXP3_VAUXN3">false</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CHANNEL_ENABLE_VAUXP4_VAUXN4">false</spirit:configurableElementValue>
@@ -335,6 +335,7 @@
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.SUPPORTS_NARROW_BURST" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.WUSER_WIDTH" xilinx:valueSource="constant"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.CHANNEL_ENABLE_VAUXP0_VAUXN0" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.CHANNEL_ENABLE_VAUXP14_VAUXN14" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.CHANNEL_ENABLE_VAUXP1_VAUXN1" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.CHANNEL_ENABLE_VP_VN" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.ENABLE_EXTERNAL_MUX" xilinx:valueSource="user"/>

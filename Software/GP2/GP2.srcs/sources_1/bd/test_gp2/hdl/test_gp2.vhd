@@ -1,7 +1,7 @@
 --Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
---Date        : Tue Sep 27 12:26:48 2016
+--Date        : Tue Sep 27 14:53:51 2016
 --Host        : LogOut-Lenovo running 64-bit major release  (build 9200)
 --Command     : generate_target test_gp2.bd
 --Design      : test_gp2
@@ -598,7 +598,11 @@ entity test_gp2 is
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    Vaux14_v_n : in STD_LOGIC;
+    Vaux14_v_p : in STD_LOGIC;
+    Vp_Vn_v_n : in STD_LOGIC;
+    Vp_Vn_v_p : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
   attribute CORE_GENERATION_INFO of test_gp2 : entity is "test_gp2,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=test_gp2,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,da_axi4_cnt=2,da_ps7_cnt=1,synth_mode=Global}";
@@ -718,10 +722,8 @@ architecture STRUCTURE of test_gp2 is
     ip2intc_irpt : out STD_LOGIC;
     vp_in : in STD_LOGIC;
     vn_in : in STD_LOGIC;
-    vauxp0 : in STD_LOGIC;
-    vauxn0 : in STD_LOGIC;
-    vauxp1 : in STD_LOGIC;
-    vauxn1 : in STD_LOGIC;
+    vauxp14 : in STD_LOGIC;
+    vauxn14 : in STD_LOGIC;
     user_temp_alarm_out : out STD_LOGIC;
     vccint_alarm_out : out STD_LOGIC;
     vccaux_alarm_out : out STD_LOGIC;
@@ -736,6 +738,10 @@ architecture STRUCTURE of test_gp2 is
     busy_out : out STD_LOGIC
   );
   end component test_gp2_xadc_wiz_0_1;
+  signal Vaux14_1_V_N : STD_LOGIC;
+  signal Vaux14_1_V_P : STD_LOGIC;
+  signal Vp_Vn_1_V_N : STD_LOGIC;
+  signal Vp_Vn_1_V_P : STD_LOGIC;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -838,6 +844,10 @@ architecture STRUCTURE of test_gp2 is
   signal NLW_xadc_wiz_0_vccpint_alarm_out_UNCONNECTED : STD_LOGIC;
   signal NLW_xadc_wiz_0_channel_out_UNCONNECTED : STD_LOGIC_VECTOR ( 4 downto 0 );
 begin
+  Vaux14_1_V_N <= Vaux14_v_n;
+  Vaux14_1_V_P <= Vaux14_v_p;
+  Vp_Vn_1_V_N <= Vp_Vn_v_n;
+  Vp_Vn_1_V_P <= Vp_Vn_v_p;
 processing_system7_0: component test_gp2_processing_system7_0_0
      port map (
       DDR_Addr(14 downto 0) => DDR_addr(14 downto 0),
@@ -1016,16 +1026,14 @@ xadc_wiz_0: component test_gp2_xadc_wiz_0_1
       s_axi_wstrb(3 downto 0) => processing_system7_0_axi_periph_M00_AXI_WSTRB(3 downto 0),
       s_axi_wvalid => processing_system7_0_axi_periph_M00_AXI_WVALID,
       user_temp_alarm_out => NLW_xadc_wiz_0_user_temp_alarm_out_UNCONNECTED,
-      vauxn0 => '0',
-      vauxn1 => '0',
-      vauxp0 => '0',
-      vauxp1 => '0',
+      vauxn14 => Vaux14_1_V_N,
+      vauxp14 => Vaux14_1_V_P,
       vccaux_alarm_out => NLW_xadc_wiz_0_vccaux_alarm_out_UNCONNECTED,
       vccddro_alarm_out => NLW_xadc_wiz_0_vccddro_alarm_out_UNCONNECTED,
       vccint_alarm_out => NLW_xadc_wiz_0_vccint_alarm_out_UNCONNECTED,
       vccpaux_alarm_out => NLW_xadc_wiz_0_vccpaux_alarm_out_UNCONNECTED,
       vccpint_alarm_out => NLW_xadc_wiz_0_vccpint_alarm_out_UNCONNECTED,
-      vn_in => '0',
-      vp_in => '0'
+      vn_in => Vp_Vn_1_V_N,
+      vp_in => Vp_Vn_1_V_P
     );
 end STRUCTURE;

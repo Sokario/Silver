@@ -77,10 +77,8 @@ test_gp2_xadc_wiz_0_1 your_instance_name (
   .ip2intc_irpt(ip2intc_irpt),                // output wire ip2intc_irpt
   .vp_in(vp_in),                              // input wire vp_in
   .vn_in(vn_in),                              // input wire vn_in
-  .vauxp0(vauxp0),                            // input wire vauxp0
-  .vauxn0(vauxn0),                            // input wire vauxn0
-  .vauxp1(vauxp1),                            // input wire vauxp1
-  .vauxn1(vauxn1),                            // input wire vauxn1
+  .vauxp14(vauxp14),                          // input wire vauxp14
+  .vauxn14(vauxn14),                          // input wire vauxn14
   .user_temp_alarm_out(user_temp_alarm_out),  // output wire user_temp_alarm_out
   .vccint_alarm_out(vccint_alarm_out),        // output wire vccint_alarm_out
   .vccaux_alarm_out(vccaux_alarm_out),        // output wire vccaux_alarm_out

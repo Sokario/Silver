@@ -1,7 +1,7 @@
 --Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
---Date        : Tue Sep 27 12:26:48 2016
+--Date        : Tue Sep 27 14:53:51 2016
 --Host        : LogOut-Lenovo running 64-bit major release  (build 9200)
 --Command     : generate_target test_gp2_wrapper.bd
 --Design      : test_gp2_wrapper
@@ -33,7 +33,11 @@ entity test_gp2_wrapper is
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    Vaux14_v_n : in STD_LOGIC;
+    Vaux14_v_p : in STD_LOGIC;
+    Vp_Vn_v_n : in STD_LOGIC;
+    Vp_Vn_v_p : in STD_LOGIC
   );
 end test_gp2_wrapper;
 
@@ -60,7 +64,11 @@ architecture STRUCTURE of test_gp2_wrapper is
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC
+    FIXED_IO_ps_porb : inout STD_LOGIC;
+    Vp_Vn_v_n : in STD_LOGIC;
+    Vp_Vn_v_p : in STD_LOGIC;
+    Vaux14_v_n : in STD_LOGIC;
+    Vaux14_v_p : in STD_LOGIC
   );
   end component test_gp2;
 begin
@@ -86,6 +94,10 @@ test_gp2_i: component test_gp2
       FIXED_IO_mio(53 downto 0) => FIXED_IO_mio(53 downto 0),
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
-      FIXED_IO_ps_srstb => FIXED_IO_ps_srstb
+      FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
+      Vaux14_v_n => Vaux14_v_n,
+      Vaux14_v_p => Vaux14_v_p,
+      Vp_Vn_v_n => Vp_Vn_v_n,
+      Vp_Vn_v_p => Vp_Vn_v_p
     );
 end STRUCTURE;
