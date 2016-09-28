@@ -15,8 +15,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
 set_property ip_repo_paths {
-  c:/travail/objets/github/silver/software/ip_repo/encoder_1.0
-  c:/Travail/Objets/GitHub/Silver/Software/ip_repo/Speed_1.0
+  c:/travail/objets/github/silver/software/ip_repo/speed_1.0
   c:/Travail/Objets/GitHub/Silver/Software/ip_repo
 } [current_project]
 set_property vhdl_version vhdl_2k [current_fileset]

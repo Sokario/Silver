@@ -245,3 +245,123 @@ arm-xilinx-eabi-size tes_vitesse.elf  |tee "tes_vitesse.elf.size"
 15:59:01 **** Incremental Build of configuration Debug for project tes_vitesse ****
 make all 
 make: Rien à faire pour « all ».
+16:16:17 **** Auto Build of configuration Debug for project tes_vitesse ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../tes_vitesse_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: tes_vitesse.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../tes_vitesse_bsp/ps7_cortexa9_0/lib -o "tes_vitesse.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tes_vitesse.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size tes_vitesse.elf  |tee "tes_vitesse.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25348	   1152	  22564	  49064	   bfa8	tes_vitesse.elf
+'Finished building: tes_vitesse.elf.size'
+' '
+16:23:23 **** Incremental Build of configuration Debug for project tes_vitesse ****
+make all 
+make: Rien à faire pour « all ».
+16:24:54 **** Auto Build of configuration Debug for project tes_vitesse ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../tes_vitesse_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: tes_vitesse.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../tes_vitesse_bsp/ps7_cortexa9_0/lib -o "tes_vitesse.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tes_vitesse.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size tes_vitesse.elf  |tee "tes_vitesse.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25348	   1152	  22564	  49064	   bfa8	tes_vitesse.elf
+'Finished building: tes_vitesse.elf.size'
+' '
+16:25:37 **** Incremental Build of configuration Debug for project tes_vitesse ****
+make all 
+make: Rien à faire pour « all ».
+16:36:00 **** Auto Build of configuration Debug for project tes_vitesse ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../tes_vitesse_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: tes_vitesse.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../tes_vitesse_bsp/ps7_cortexa9_0/lib -o "tes_vitesse.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tes_vitesse.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size tes_vitesse.elf  |tee "tes_vitesse.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25348	   1152	  22564	  49064	   bfa8	tes_vitesse.elf
+'Finished building: tes_vitesse.elf.size'
+' '
+16:36:14 **** Incremental Build of configuration Debug for project tes_vitesse ****
+make all 
+make: Rien à faire pour « all ».
+16:36:40 **** Incremental Build of configuration Debug for project tes_vitesse ****
+make all 
+make: Rien à faire pour « all ».
+16:38:14 **** Incremental Build of configuration Debug for project tes_vitesse ****
+make all 
+make: Rien à faire pour « all ».
+16:42:14 **** Incremental Build of configuration Debug for project tes_vitesse ****
+make all 
+make: Rien à faire pour « all ».
+16:43:08 **** Auto Build of configuration Debug for project tes_vitesse ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../tes_vitesse_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: tes_vitesse.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../tes_vitesse_bsp/ps7_cortexa9_0/lib -o "tes_vitesse.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tes_vitesse.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size tes_vitesse.elf  |tee "tes_vitesse.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25284	   1152	  22564	  49000	   bf68	tes_vitesse.elf
+'Finished building: tes_vitesse.elf.size'
+' '
+16:43:21 **** Incremental Build of configuration Debug for project tes_vitesse ****
+make all 
+make: Rien à faire pour « all ».
+17:00:27 **** Auto Build of configuration Debug for project tes_vitesse ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../tes_vitesse_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: tes_vitesse.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../tes_vitesse_bsp/ps7_cortexa9_0/lib -o "tes_vitesse.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tes_vitesse.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size tes_vitesse.elf  |tee "tes_vitesse.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25288	   1152	  22564	  49004	   bf6c	tes_vitesse.elf
+'Finished building: tes_vitesse.elf.size'
+' '
+17:00:35 **** Incremental Build of configuration Debug for project tes_vitesse ****
+make all 
+make: Rien à faire pour « all ».
+17:01:00 **** Incremental Build of configuration Debug for project tes_vitesse ****
+make all 
+make: Rien à faire pour « all ».
+17:31:12 **** Incremental Build of configuration Debug for project tes_vitesse ****
+make all 
+make: Rien à faire pour « all ».

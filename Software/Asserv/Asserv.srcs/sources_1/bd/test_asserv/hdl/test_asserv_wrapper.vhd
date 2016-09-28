@@ -1,7 +1,7 @@
 --Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
---Date        : Wed Sep 28 15:28:36 2016
+--Date        : Wed Sep 28 17:02:43 2016
 --Host        : LogOut-Lenovo running 64-bit major release  (build 9200)
 --Command     : generate_target test_asserv_wrapper.bd
 --Design      : test_asserv_wrapper

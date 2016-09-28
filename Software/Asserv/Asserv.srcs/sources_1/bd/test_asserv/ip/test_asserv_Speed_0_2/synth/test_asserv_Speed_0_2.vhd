@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:Speed:1.0
--- IP Revision: 4
+-- IP Revision: 5
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -89,7 +89,8 @@ ARCHITECTURE test_asserv_Speed_0_2_arch OF test_asserv_Speed_0_2 IS
     GENERIC (
       C_S00_AXI_DATA_WIDTH : INTEGER; -- Width of S_AXI data bus
       C_S00_AXI_ADDR_WIDTH : INTEGER; -- Width of S_AXI address bus
-      FREQUENCE : INTEGER
+      FREQUENCE : INTEGER;
+      DIVISION : INTEGER
     );
     PORT (
       Increments : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -122,7 +123,7 @@ ARCHITECTURE test_asserv_Speed_0_2_arch OF test_asserv_Speed_0_2 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF test_asserv_Speed_0_2_arch : ARCHITECTURE IS "test_asserv_Speed_0_2,Speed_v1_0,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF test_asserv_Speed_0_2_arch: ARCHITECTURE IS "test_asserv_Speed_0_2,Speed_v1_0,{x_ipProduct=Vivado 2015.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=Speed,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4,FREQUENCE=200000}";
+  ATTRIBUTE CORE_GENERATION_INFO OF test_asserv_Speed_0_2_arch: ARCHITECTURE IS "test_asserv_Speed_0_2,Speed_v1_0,{x_ipProduct=Vivado 2015.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=Speed,x_ipVersion=1.0,x_ipCoreRevision=5,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4,FREQUENCE=256,DIVISION=390625}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF s00_axi_awaddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR";
   ATTRIBUTE X_INTERFACE_INFO OF s00_axi_awprot: SIGNAL IS "xilinx.com:interface:aximm:1.0 S00_AXI AWPROT";
@@ -150,7 +151,8 @@ BEGIN
     GENERIC MAP (
       C_S00_AXI_DATA_WIDTH => 32,
       C_S00_AXI_ADDR_WIDTH => 4,
-      FREQUENCE => 200000
+      FREQUENCE => 256,
+      DIVISION => 390625
     )
     PORT MAP (
       Increments => Increments,

@@ -153,6 +153,9 @@ proc create_root_design { parentCell } {
 
   # Create instance: Speed_0, and set properties
   set Speed_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:Speed:1.0 Speed_0 ]
+  set_property -dict [ list \
+CONFIG.FREQUENCE {256} \
+ ] $Speed_0
 
   # Create instance: encoder_0, and set properties
   set encoder_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:encoder:1.0 encoder_0 ]

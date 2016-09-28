@@ -19,8 +19,7 @@
     <Option Name="BoardPart" Val="digilentinc.com:zybo:part0:1.0"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../travail/objets/github/silver/software/ip_repo/encoder_1.0"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/Speed_1.0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../travail/objets/github/silver/software/ip_repo/speed_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
     <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
@@ -43,12 +42,12 @@
         <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="ip/test_asserv_processing_system7_0_axi_periph_0/test_asserv_processing_system7_0_axi_periph_0.xci"/>
         <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="ip/test_asserv_processing_system7_0_0/test_asserv_processing_system7_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="ip/test_asserv_Speed_0_2/test_asserv_Speed_0_2.xci"/>
-        <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="ip/test_asserv_auto_pc_0/test_asserv_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="test_asserv_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="hdl/test_asserv.vhd"/>
+        <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="ip/test_asserv_auto_pc_0/test_asserv_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="hdl/test_asserv.hwdef"/>
-        <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="hw_handoff/test_asserv.hwh"/>
         <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="hw_handoff/test_asserv_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="hw_handoff/test_asserv.hwh"/>
+        <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="hdl/test_asserv.vhd"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/test_asserv/hdl/test_asserv_wrapper.vhd">
         <FileInfo>

@@ -41,3 +41,141 @@ Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors
 15:59:04 INFO  : ps7_init is completed.
 15:59:04 INFO  : ps7_post_config is completed.
 15:59:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:16:22 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:22:33 INFO  : Launching XSDB server: xsdb.bat C:/Travail/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:22:35 INFO  : XSDB server has started successfully.
+16:22:36 INFO  : Processing command line option -hwspec C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper.hdf.
+16:22:36 INFO  : Checking for hwspec changes in the project test_asserv_wrapper_hw_platform_0.
+16:22:39 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1475072506378,  Project:1475069533792
+16:22:39 INFO  : The hardware specification for project 'test_asserv_wrapper_hw_platform_0' is different from C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper.hdf.
+16:22:39 INFO  : Copied contents of C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper.hdf into \test_asserv_wrapper_hw_platform_0\system.hdf.
+16:22:45 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:22:48 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Accès refusé: "C:/Users/LogOut/AppData/Local/Temp\msdtadmin"
+
+16:22:48 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+16:22:48 ERROR : Error updating BSP project MSS files.
+16:22:49 INFO  : Updating hardware inferred compiler options for tes_vitesse.
+16:22:49 INFO  : Clearing existing target manager status.
+16:23:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:23:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+16:23:09 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+16:23:28 INFO  : ps7_init is completed.
+16:23:28 INFO  : ps7_post_config is completed.
+16:23:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:25:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:25:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+16:25:29 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+16:25:41 INFO  : ps7_init is completed.
+16:25:41 INFO  : ps7_post_config is completed.
+16:25:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:36:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:36:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+16:36:10 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+16:36:15 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:36:24 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:1011)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:534)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+16:36:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:36:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+16:36:36 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+16:36:42 INFO  : ps7_init is completed.
+16:36:42 INFO  : ps7_post_config is completed.
+16:36:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:37:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:38:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+16:38:02 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+16:38:16 INFO  : ps7_init is completed.
+16:38:16 INFO  : ps7_post_config is completed.
+16:38:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:41:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:41:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+16:41:42 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+16:42:15 INFO  : ps7_init is completed.
+16:42:15 INFO  : ps7_post_config is completed.
+16:42:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:43:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:43:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+16:43:18 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+16:43:23 INFO  : ps7_init is completed.
+16:43:23 INFO  : ps7_post_config is completed.
+16:43:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:54:23 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:59:41 INFO  : Launching XSDB server: xsdb.bat C:/Travail/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:59:43 INFO  : XSDB server has started successfully.
+16:59:43 INFO  : Processing command line option -hwspec C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper.hdf.
+16:59:43 INFO  : Checking for hwspec changes in the project test_asserv_wrapper_hw_platform_0.
+16:59:47 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1475074732371,  Project:1475072506378
+16:59:47 INFO  : The hardware specification for project 'test_asserv_wrapper_hw_platform_0' is different from C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper.hdf.
+16:59:47 INFO  : Copied contents of C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper.hdf into \test_asserv_wrapper_hw_platform_0\system.hdf.
+16:59:52 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:59:55 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Accès refusé: "C:/Users/LogOut/AppData/Local/Temp\msdtadmin"
+
+16:59:55 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+16:59:55 ERROR : Error updating BSP project MSS files.
+16:59:56 INFO  : Updating hardware inferred compiler options for tes_vitesse.
+16:59:56 INFO  : Clearing existing target manager status.
+17:00:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:00:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:00:11 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+17:00:44 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:1011)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:534)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:00:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:00:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:00:56 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+17:01:02 INFO  : ps7_init is completed.
+17:01:02 INFO  : ps7_post_config is completed.
+17:01:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:03:17 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:21:54 INFO  : Launching XSDB server: xsdb.bat C:/Travail/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:21:57 INFO  : XSDB server has started successfully.
+17:21:58 INFO  : Processing command line option -hwspec C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper.hdf.
+17:21:58 INFO  : Checking for hwspec changes in the project test_asserv_wrapper_hw_platform_0.
+17:22:01 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1475075158189,  Project:1475074732371
+17:22:01 INFO  : The hardware specification for project 'test_asserv_wrapper_hw_platform_0' is different from C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper.hdf.
+17:22:01 INFO  : Copied contents of C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper.hdf into \test_asserv_wrapper_hw_platform_0\system.hdf.
+17:22:06 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:22:09 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Accès refusé: "C:/Users/LogOut/AppData/Local/Temp\msdtadmin"
+
+17:22:09 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+17:22:09 ERROR : Error updating BSP project MSS files.
+17:22:10 INFO  : Updating hardware inferred compiler options for tes_vitesse.
+17:22:10 INFO  : Clearing existing target manager status.
+17:31:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:31:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:31:04 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+17:31:18 INFO  : ps7_init is completed.
+17:31:18 INFO  : ps7_post_config is completed.
+17:31:19 INFO  : Processor reset is completed for ps7_cortexa9_0

@@ -55,9 +55,8 @@ set rc [catch {
   set_property parent.project_path C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.xpr [current_project]
   set_property ip_repo_paths {
   c:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.cache/ip
-  C:/travail/objets/github/silver/software/ip_repo/encoder_1.0
-  C:/Travail/Objets/GitHub/Silver/Software/ip_repo/Speed_1.0
-  C:/Travail/Objets/GitHub/Silver/Software/ip_repo
+  c:/travail/objets/github/silver/software/ip_repo/speed_1.0
+  c:/Travail/Objets/GitHub/Silver/Software/ip_repo
 } [current_project]
   set_property ip_output_repo c:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.cache/ip [current_project]
   add_files -quiet C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.runs/synth_1/test_asserv_wrapper.dcp

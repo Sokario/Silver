@@ -63,7 +63,7 @@ int main()
     value_d = Xil_In32(encodeur_d);
     xil_printf("Encodeur Droit: %d impulsions\n", value_d);
     value_d = Xil_In32(speed_d);
-    xil_printf("Vitesse Droit: %d tr.min\n", value_d * 30000 / 4096);
+    xil_printf("Vitesse Droit: %d impulsions.s\n", value_d);
     usleep(200000);
     }
 

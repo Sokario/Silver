@@ -5,7 +5,8 @@ use ieee.numeric_std.all;
 entity Speed_v1_0_S00_AXI is
 	generic (
 		-- Users to add parameters here
-        FREQUENCE : integer := 200000; -- 200000 -> 500Hz -> Te = 2ms
+        FREQUENCE   : integer := 256; -- 256Hz
+        DIVISION    : integer := 390625; -- 390625 -> 256Hz
 		-- User parameters ends
 		-- Do not modify the parameters beyond this line
 
@@ -87,8 +88,8 @@ end Speed_v1_0_S00_AXI;
 architecture arch_imp of Speed_v1_0_S00_AXI is
 
     signal enable   : std_logic;
-    signal counter  : integer range 0 to FREQUENCE-1 := 0;
-    signal value    : signed(C_S_AXI_DATA_WIDTH-1 downto 0);
+    signal counter  : integer range 0 to DIVISION-1 := 0;
+    signal value    : signed(2*C_S_AXI_DATA_WIDTH-1 downto 0);
     signal previous : std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0) := (others => '0');
 
 	-- AXI4LITE signals
@@ -353,7 +354,7 @@ begin
 	    loc_addr := axi_araddr(ADDR_LSB + OPT_MEM_ADDR_BITS downto ADDR_LSB);
 	    case loc_addr is
 	      when b"00" =>
-	        reg_data_out <= std_logic_vector(value);
+	        reg_data_out <= std_logic_vector(value(C_S_AXI_DATA_WIDTH-1 downto 0));
 	      when b"01" =>
 	        reg_data_out <= slv_reg1;
 	      when b"10" =>
@@ -388,7 +389,7 @@ begin
 	process( S_AXI_ACLK ) is
     begin
       if (rising_edge (S_AXI_ACLK)) then
-        if(counter = FREQUENCE-1) then
+        if(counter = DIVISION-1) then
           counter <= 0;
         else
           counter <= counter + 1;
@@ -400,7 +401,7 @@ begin
     begin
       if (rising_edge (S_AXI_ACLK)) then
         if ( enable = '1' ) then
-          value <= signed(Increments) - signed(previous);
+          value <= (signed(Increments) - signed(previous)) * to_signed(FREQUENCE, C_S_AXI_DATA_WIDTH);
           previous <= Increments;
         else
           value <= value;
@@ -409,8 +410,8 @@ begin
       end if;
     end process;
     
-    enable <= '1' when (counter = FREQUENCE-1) else '0';
-    Speed <= std_logic_vector(value);
+    enable <= '1' when (counter = DIVISION-1) else '0';
+    Speed <= std_logic_vector(value(C_S_AXI_DATA_WIDTH-1 downto 0));
     -- User logic ends
 
 end arch_imp;

@@ -5,7 +5,8 @@ use ieee.numeric_std.all;
 entity Speed_v1_0 is
 	generic (
 		-- Users to add parameters here
-        FREQUENCE : integer := 200000; -- 200000 -> 500Hz -> Te = 2ms
+        FREQUENCE   : integer := 256; -- 256Hz
+        DIVISION    : integer := 390625; -- 390625 -> 256Hz
 		-- User parameters ends
 		-- Do not modify the parameters beyond this line
 
@@ -52,7 +53,8 @@ architecture arch_imp of Speed_v1_0 is
 	-- component declaration
 	component Speed_v1_0_S00_AXI is
 		generic (
-		FREQUENCE : integer := 200000;
+		FREQUENCE   : integer := 256;
+        DIVISION    : integer := 390625;
 		C_S_AXI_DATA_WIDTH	: integer	:= 32;
 		C_S_AXI_ADDR_WIDTH	: integer	:= 4
 		);
@@ -89,6 +91,7 @@ begin
 Speed_v1_0_S00_AXI_inst : Speed_v1_0_S00_AXI
 	generic map (
 	    FREQUENCE  => FREQUENCE,
+	    DIVISION   => DIVISION,
 		C_S_AXI_DATA_WIDTH	=> C_S00_AXI_DATA_WIDTH,
 		C_S_AXI_ADDR_WIDTH	=> C_S00_AXI_ADDR_WIDTH
 	)

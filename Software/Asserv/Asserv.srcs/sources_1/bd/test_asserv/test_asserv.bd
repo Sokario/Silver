@@ -323,6 +323,7 @@
         <spirit:componentRef spirit:library="user" spirit:name="Speed" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">test_asserv_Speed_0_2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="FREQUENCE">256</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
