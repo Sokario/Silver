@@ -650,3 +650,6 @@ arm-xilinx-eabi-size test_gp2.elf  |tee "test_gp2.elf.size"
   68348	   2336	  22668	  93352	  16ca8	test_gp2.elf
 'Finished building: test_gp2.elf.size'
 ' '
+13:39:26 **** Incremental Build of configuration Debug for project test_gp2 ****
+make all 
+make: Rien à faire pour « all ».

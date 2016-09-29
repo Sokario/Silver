@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="test_pwm" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1474957323"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1474957323"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1474957323"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1475154895"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1475154895"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1475154895"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\test_pwm_processing_system7_0_0\test_pwm_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>

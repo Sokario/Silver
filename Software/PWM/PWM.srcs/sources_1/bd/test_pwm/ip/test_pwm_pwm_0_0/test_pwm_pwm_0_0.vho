@@ -47,13 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:pwm:1.0
--- IP Revision: 3
+-- IP Revision: 4
 
 -- The following code must appear in the VHDL architecture header.
 
 ------------- Begin Cut here for COMPONENT Declaration ------ COMP_TAG
 COMPONENT test_pwm_pwm_0_0
   PORT (
+    Rapport : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     PWM : OUT STD_LOGIC;
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     s00_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -86,6 +87,7 @@ END COMPONENT;
 ------------- Begin Cut here for INSTANTIATION Template ----- INST_TAG
 your_instance_name : test_pwm_pwm_0_0
   PORT MAP (
+    Rapport => Rapport,
     PWM => PWM,
     s00_axi_awaddr => s00_axi_awaddr,
     s00_axi_awprot => s00_axi_awprot,

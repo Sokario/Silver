@@ -139,3 +139,87 @@ arm-xilinx-eabi-size test_pwm.elf  |tee "test_pwm.elf.size"
 08:31:54 **** Incremental Build of configuration Debug for project test_pwm ****
 make all 
 make: Rien à faire pour « all ».
+14:02:10 **** Incremental Build of configuration Debug for project test_pwm ****
+make all 
+make: Rien à faire pour « all ».
+15:08:50 **** Incremental Build of configuration Debug for project test_pwm ****
+make all 
+make: Rien à faire pour « all ».
+15:09:24 **** Incremental Build of configuration Debug for project test_pwm ****
+make all 
+make: Rien à faire pour « all ».
+15:09:45 **** Incremental Build of configuration Debug for project test_pwm ****
+make all 
+make: Rien à faire pour « all ».
+15:10:41 **** Incremental Build of configuration Debug for project test_pwm ****
+make all 
+make: Rien à faire pour « all ».
+15:11:20 **** Auto Build of configuration Debug for project test_pwm ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_pwm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_pwm.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pwm_bsp/ps7_cortexa9_0/lib -o "test_pwm.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pwm.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test_pwm.elf  |tee "test_pwm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22664	   1152	  22564	  46380	   b52c	test_pwm.elf
+'Finished building: test_pwm.elf.size'
+' '
+15:11:37 **** Incremental Build of configuration Debug for project test_pwm ****
+make all 
+make: Rien à faire pour « all ».
+15:18:49 **** Incremental Build of configuration Debug for project test_pwm ****
+make all 
+make: Rien à faire pour « all ».
+15:20:09 **** Incremental Build of configuration Debug for project test_pwm ****
+make all 
+make: Rien à faire pour « all ».
+15:20:30 **** Auto Build of configuration Debug for project test_pwm ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_pwm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_pwm.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pwm_bsp/ps7_cortexa9_0/lib -o "test_pwm.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pwm.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test_pwm.elf  |tee "test_pwm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22648	   1152	  22564	  46364	   b51c	test_pwm.elf
+'Finished building: test_pwm.elf.size'
+' '
+15:20:55 **** Incremental Build of configuration Debug for project test_pwm ****
+make all 
+make: Rien à faire pour « all ».
+15:21:11 **** Auto Build of configuration Debug for project test_pwm ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_pwm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_pwm.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pwm_bsp/ps7_cortexa9_0/lib -o "test_pwm.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pwm.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test_pwm.elf  |tee "test_pwm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22664	   1152	  22564	  46380	   b52c	test_pwm.elf
+'Finished building: test_pwm.elf.size'
+' '
+15:21:44 **** Incremental Build of configuration Debug for project test_pwm ****
+make all 
+make: Rien à faire pour « all ».

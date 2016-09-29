@@ -326,7 +326,7 @@ preplace inst pwm_0 -pg 1 -lvl 3 -y 130 -defaultsOSRD
 preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 110 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -y 340 -defaultsOSRD
 preplace netloc processing_system7_0_DDR 1 1 3 NJ 250 NJ 250 NJ
-preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 N
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 750
 preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 440
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 40 410
 preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 2 450 230 NJ

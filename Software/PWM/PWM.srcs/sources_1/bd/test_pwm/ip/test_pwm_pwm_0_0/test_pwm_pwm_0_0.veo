@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 // IP VLNV: xilinx.com:user:pwm:1.0
-// IP Revision: 3
+// IP Revision: 4
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -55,6 +55,7 @@
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 test_pwm_pwm_0_0 your_instance_name (
+  .Rapport(Rapport),                  // input wire [31 : 0] Rapport
   .PWM(PWM),                          // output wire PWM
   .s00_axi_awaddr(s00_axi_awaddr),    // input wire [3 : 0] s00_axi_awaddr
   .s00_axi_awprot(s00_axi_awprot),    // input wire [2 : 0] s00_axi_awprot

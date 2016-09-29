@@ -14,7 +14,10 @@ set_property parent.project_path C:/Travail/Objets/GitHub/Silver/Software/PWM/PW
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
-set_property ip_repo_paths c:/Travail/Objets/GitHub/Silver/Software/ip_repo [current_project]
+set_property ip_repo_paths {
+  c:/travail/objets/github/silver/software/ip_repo/pwm_1.0
+  c:/Travail/Objets/GitHub/Silver/Software/ip_repo
+} [current_project]
 set_property vhdl_version vhdl_2k [current_fileset]
 add_files C:/Travail/Objets/GitHub/Silver/Software/PWM/PWM.srcs/sources_1/bd/test_pwm/test_pwm.bd
 set_property used_in_implementation false [get_files -all c:/Travail/Objets/GitHub/Silver/Software/PWM/PWM.srcs/sources_1/bd/test_pwm/ip/test_pwm_processing_system7_0_0/test_pwm_processing_system7_0_0.xdc]

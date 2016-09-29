@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:pwm:1.0
--- IP Revision: 3
+-- IP Revision: 4
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -55,6 +55,7 @@ USE ieee.numeric_std.ALL;
 
 ENTITY test_pwm_pwm_0_0 IS
   PORT (
+    Rapport : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     PWM : OUT STD_LOGIC;
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     s00_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -91,6 +92,7 @@ ARCHITECTURE test_pwm_pwm_0_0_arch OF test_pwm_pwm_0_0 IS
       PWM_COUNTER_MAX : INTEGER
     );
     PORT (
+      Rapport : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       PWM : OUT STD_LOGIC;
       s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       s00_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -145,6 +147,7 @@ BEGIN
       PWM_COUNTER_MAX => 2500
     )
     PORT MAP (
+      Rapport => Rapport,
       PWM => PWM,
       s00_axi_awaddr => s00_axi_awaddr,
       s00_axi_awprot => s00_axi_awprot,

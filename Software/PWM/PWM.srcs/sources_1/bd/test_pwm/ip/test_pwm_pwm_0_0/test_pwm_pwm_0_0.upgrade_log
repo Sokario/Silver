@@ -1,0 +1,47 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Thu Sep 29 15:14:16 2016
+| Host         : LogOut-Lenovo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pwm_pwm_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pwm_pwm_0_0 (xilinx.com:user:pwm:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Thu Sep 29 14:58:18 2016
+| Host         : LogOut-Lenovo running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pwm_pwm_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pwm_pwm_0_0 (xilinx.com:user:pwm:1.0) from (Rev. 3) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'test_pwm_pwm_0_0'. These changes may impact your design.
+
+
+-upgrade has added port 'Rapport'
+

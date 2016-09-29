@@ -1,7 +1,7 @@
 --Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
---Date        : Tue Sep 27 08:21:27 2016
+--Date        : Thu Sep 29 15:14:28 2016
 --Host        : LogOut-Lenovo running 64-bit major release  (build 9200)
 --Command     : generate_target test_pwm.bd
 --Design      : test_pwm
@@ -693,8 +693,23 @@ architecture STRUCTURE of test_pwm is
     PS_PORB : inout STD_LOGIC
   );
   end component test_pwm_processing_system7_0_0;
+  component test_pwm_rst_processing_system7_0_100M_0 is
+  port (
+    slowest_sync_clk : in STD_LOGIC;
+    ext_reset_in : in STD_LOGIC;
+    aux_reset_in : in STD_LOGIC;
+    mb_debug_sys_rst : in STD_LOGIC;
+    dcm_locked : in STD_LOGIC;
+    mb_reset : out STD_LOGIC;
+    bus_struct_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
+    peripheral_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
+    interconnect_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 );
+    peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component test_pwm_rst_processing_system7_0_100M_0;
   component test_pwm_pwm_0_0 is
   port (
+    Rapport : in STD_LOGIC_VECTOR ( 31 downto 0 );
     PWM : out STD_LOGIC;
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -719,20 +734,6 @@ architecture STRUCTURE of test_pwm is
     s00_axi_aresetn : in STD_LOGIC
   );
   end component test_pwm_pwm_0_0;
-  component test_pwm_rst_processing_system7_0_100M_0 is
-  port (
-    slowest_sync_clk : in STD_LOGIC;
-    ext_reset_in : in STD_LOGIC;
-    aux_reset_in : in STD_LOGIC;
-    mb_debug_sys_rst : in STD_LOGIC;
-    dcm_locked : in STD_LOGIC;
-    mb_reset : out STD_LOGIC;
-    bus_struct_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
-    peripheral_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
-    interconnect_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 );
-    peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component test_pwm_rst_processing_system7_0_100M_0;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -967,6 +968,7 @@ processing_system7_0_axi_periph: entity work.test_pwm_processing_system7_0_axi_p
 pwm_0: component test_pwm_pwm_0_0
      port map (
       PWM => pwm_0_PWM,
+      Rapport(31 downto 0) => B"00000000000000000000000000000000",
       s00_axi_aclk => processing_system7_0_FCLK_CLK0,
       s00_axi_araddr(3 downto 0) => processing_system7_0_axi_periph_M00_AXI_ARADDR(3 downto 0),
       s00_axi_aresetn => rst_processing_system7_0_100M_peripheral_aresetn(0),

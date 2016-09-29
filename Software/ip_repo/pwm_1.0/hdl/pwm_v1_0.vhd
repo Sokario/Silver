@@ -16,6 +16,7 @@ entity pwm_v1_0 is
 	);
 	port (
 		-- Users to add ports here
+		Rapport   : in std_logic_vector(C_S00_AXI_DATA_WIDTH-1 downto 0);
         PWM : out std_logic;
 		-- User ports ends
 		-- Do not modify the ports beyond this line
@@ -56,6 +57,7 @@ architecture arch_imp of pwm_v1_0 is
 		PWM_COUNTER_MAX : integer := 1024
 		);
 		port (
+		Rapport : in std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 		PWM : out std_logic;
 		S_AXI_ACLK	: in std_logic;
 		S_AXI_ARESETN	: in std_logic;
@@ -91,6 +93,7 @@ pwm_v1_0_S00_AXI_inst : pwm_v1_0_S00_AXI
 		PWM_COUNTER_MAX   => PWM_COUNTER_MAX
 	)
 	port map (
+	    Rapport    => Rapport,
 	    PWM    => PWM,
 		S_AXI_ACLK	=> s00_axi_aclk,
 		S_AXI_ARESETN	=> s00_axi_aresetn,

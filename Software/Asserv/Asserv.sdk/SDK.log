@@ -179,3 +179,4 @@ Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors
 17:31:18 INFO  : ps7_init is completed.
 17:31:18 INFO  : ps7_post_config is completed.
 17:31:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:29:47 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

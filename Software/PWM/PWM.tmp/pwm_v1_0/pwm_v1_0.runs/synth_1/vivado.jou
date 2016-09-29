@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Sep 29 15:13:16 2016
+# Process ID: 5556
+# Current directory: c:/Travail/Objets/GitHub/Silver/Software/PWM/PWM.tmp/pwm_v1_0/pwm_v1_0.runs/synth_1
+# Command line: vivado.exe -log pwm_v1_0.vds -mode batch -messageDb vivado.pb -notrace -source pwm_v1_0.tcl
+# Log file: c:/Travail/Objets/GitHub/Silver/Software/PWM/PWM.tmp/pwm_v1_0/pwm_v1_0.runs/synth_1/pwm_v1_0.vds
+# Journal file: c:/Travail/Objets/GitHub/Silver/Software/PWM/PWM.tmp/pwm_v1_0/pwm_v1_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source pwm_v1_0.tcl -notrace
