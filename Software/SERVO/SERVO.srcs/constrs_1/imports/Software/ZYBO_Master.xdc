@@ -322,8 +322,8 @@
 #set_property IOSTANDARD LVCMOS33 [get_ports {je[6]}]
 
 ##IO_L7N_T1_34
-#set_property PACKAGE_PIN Y17 [get_ports {je[7]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {je[7]}]
+set_property PACKAGE_PIN Y17 [get_ports SERVO]
+set_property IOSTANDARD LVCMOS33 [get_ports SERVO]
 
 
 ##USB-OTG overcurrent detect pin

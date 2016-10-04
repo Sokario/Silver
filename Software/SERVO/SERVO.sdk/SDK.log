@@ -1,0 +1,82 @@
+17:07:14 INFO  : Launching XSDB server: xsdb.bat C:/Travail/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:07:23 INFO  : XSDB server has started successfully.
+17:07:39 INFO  : Processing command line option -hwspec C:/Travail/Objets/GitHub/Silver/Software/SERVO/SERVO.sdk/test_servo_wrapper.hdf.
+17:19:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:19:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:19:31 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/SERVO/SERVO.sdk/test_servo_wrapper_hw_platform_0/test_servo_wrapper.bit"
+17:19:47 INFO  : ps7_init is completed.
+17:19:47 INFO  : ps7_post_config is completed.
+17:19:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:26:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:26:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:26:02 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/SERVO/SERVO.sdk/test_servo_wrapper_hw_platform_0/test_servo_wrapper.bit"
+17:26:17 INFO  : ps7_init is completed.
+17:26:17 INFO  : ps7_post_config is completed.
+17:26:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:26:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:26:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:26:41 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/SERVO/SERVO.sdk/test_servo_wrapper_hw_platform_0/test_servo_wrapper.bit"
+17:26:47 INFO  : ps7_init is completed.
+17:26:47 INFO  : ps7_post_config is completed.
+17:26:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:27:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:27:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:27:22 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/SERVO/SERVO.sdk/test_servo_wrapper_hw_platform_0/test_servo_wrapper.bit"
+17:27:29 INFO  : ps7_init is completed.
+17:27:29 INFO  : ps7_post_config is completed.
+17:27:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:29:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:29:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:29:20 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/SERVO/SERVO.sdk/test_servo_wrapper_hw_platform_0/test_servo_wrapper.bit"
+17:29:43 INFO  : ps7_init is completed.
+17:29:43 INFO  : ps7_post_config is completed.
+17:29:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:31:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:31:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:31:29 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/SERVO/SERVO.sdk/test_servo_wrapper_hw_platform_0/test_servo_wrapper.bit"
+17:31:44 INFO  : ps7_init is completed.
+17:31:44 INFO  : ps7_post_config is completed.
+17:31:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:38:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:38:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:38:05 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/SERVO/SERVO.sdk/test_servo_wrapper_hw_platform_0/test_servo_wrapper.bit"
+17:39:13 INFO  : ps7_init is completed.
+17:39:13 INFO  : ps7_post_config is completed.
+17:39:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:40:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:40:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:40:22 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/SERVO/SERVO.sdk/test_servo_wrapper_hw_platform_0/test_servo_wrapper.bit"
+17:40:29 INFO  : ps7_init is completed.
+17:40:29 INFO  : ps7_post_config is completed.
+17:40:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:41:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:41:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:41:18 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/SERVO/SERVO.sdk/test_servo_wrapper_hw_platform_0/test_servo_wrapper.bit"
+17:41:24 INFO  : ps7_init is completed.
+17:41:24 INFO  : ps7_post_config is completed.
+17:41:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:41:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:41:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:41:54 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/SERVO/SERVO.sdk/test_servo_wrapper_hw_platform_0/test_servo_wrapper.bit"
+17:42:02 INFO  : ps7_init is completed.
+17:42:02 INFO  : ps7_post_config is completed.
+17:42:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:43:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:43:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:43:13 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/SERVO/SERVO.sdk/test_servo_wrapper_hw_platform_0/test_servo_wrapper.bit"
+17:43:29 INFO  : ps7_init is completed.
+17:43:29 INFO  : ps7_post_config is completed.
+17:43:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:47:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:47:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:47:38 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/SERVO/SERVO.sdk/test_servo_wrapper_hw_platform_0/test_servo_wrapper.bit"
+17:47:47 INFO  : ps7_init is completed.
+17:47:47 INFO  : ps7_post_config is completed.
+17:47:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:48:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:48:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:48:27 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/SERVO/SERVO.sdk/test_servo_wrapper_hw_platform_0/test_servo_wrapper.bit"
+17:48:49 INFO  : ps7_init is completed.
+17:48:49 INFO  : ps7_post_config is completed.
+17:48:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:54:19 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
