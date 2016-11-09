@@ -36,18 +36,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="ip/test_asserv_encoder_0_3/test_asserv_encoder_0_3.xci"/>
-        <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="ip/test_asserv_xbar_0/test_asserv_xbar_0.xci"/>
-        <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="ip/test_asserv_rst_processing_system7_0_100M_0/test_asserv_rst_processing_system7_0_100M_0.xci"/>
-        <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="ip/test_asserv_processing_system7_0_axi_periph_0/test_asserv_processing_system7_0_axi_periph_0.xci"/>
-        <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="ip/test_asserv_processing_system7_0_0/test_asserv_processing_system7_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="ip/test_asserv_Speed_0_2/test_asserv_Speed_0_2.xci"/>
-        <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="test_asserv_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="ip/test_asserv_auto_pc_0/test_asserv_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="hdl/test_asserv.hwdef"/>
-        <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="hw_handoff/test_asserv_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="hw_handoff/test_asserv.hwh"/>
-        <CompFileExtendedInfo CompFileName="test_asserv.bd" FileRelPathName="hdl/test_asserv.vhd"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/test_asserv/hdl/test_asserv_wrapper.vhd">
         <FileInfo>
