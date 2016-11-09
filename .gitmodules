@@ -1,0 +1,7 @@
+[submodule "Software/Embedded_Linux/u-boot-Digilent-Dev-master-next"]
+	path = Software/Embedded_Linux/u-boot-Digilent-Dev-master-next
+	url = https://github.com/Sokario/u-boot-Digilent-Dev.git
+	branch = master-next
+[submodule "Software/Embedded_Linux/linux-Digilent-Dev"]
+	path = Software/Embedded_Linux/linux-Digilent-Dev
+	url = https://github.com/Sokario/Linux-Digilent-Dev
