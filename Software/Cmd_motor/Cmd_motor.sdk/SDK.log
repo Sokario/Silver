@@ -1,0 +1,222 @@
+15:21:04 INFO  : Launching XSDB server: xsdb.bat C:/Travail/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:21:12 INFO  : XSDB server has started successfully.
+15:21:16 INFO  : Processing command line option -hwspec C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper.hdf.
+15:27:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:28:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+15:28:13 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper_hw_platform_0/test_cmd_wrapper.bit"
+15:28:44 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+15:28:50 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot Read from target
+
+
+    MMU section translation fault
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:514)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:29:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:29:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+15:29:40 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper_hw_platform_0/test_cmd_wrapper.bit"
+15:29:45 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot Read from target
+
+
+    MMU section translation fault
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:514)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:30:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:30:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+15:30:05 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper_hw_platform_0/test_cmd_wrapper.bit"
+15:30:09 INFO  : ps7_init is completed.
+15:30:09 INFO  : ps7_post_config is completed.
+15:30:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:59:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:59:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+15:59:51 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper_hw_platform_0/test_cmd_wrapper.bit"
+16:00:00 INFO  : ps7_init is completed.
+16:00:00 INFO  : ps7_post_config is completed.
+16:00:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:00:27 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:00:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:00:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:00:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+16:00:57 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper_hw_platform_0/test_cmd_wrapper.bit"
+16:01:03 INFO  : ps7_init is completed.
+16:01:03 INFO  : ps7_post_config is completed.
+16:01:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:01:33 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:01:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:02:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:02:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+16:02:50 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper_hw_platform_0/test_cmd_wrapper.bit"
+16:02:59 INFO  : ps7_init is completed.
+16:02:59 INFO  : ps7_post_config is completed.
+16:03:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:03:22 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:03:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:03:39 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:03:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:03:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:04:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+16:04:13 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper_hw_platform_0/test_cmd_wrapper.bit"
+16:04:26 INFO  : ps7_init is completed.
+16:04:26 INFO  : ps7_post_config is completed.
+16:04:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:04:55 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:04:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:05:15 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:05:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:05:40 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:05:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:05:52 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:05:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:06:30 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:06:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:06:55 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:06:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:07:08 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:07:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:07:48 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:07:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:08:07 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:08:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:08:24 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:08:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:03:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:03:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+18:03:54 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper_hw_platform_0/test_cmd_wrapper.bit"
+18:04:13 INFO  : ps7_init is completed.
+18:04:13 INFO  : ps7_post_config is completed.
+18:04:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:04:38 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:04:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:05:13 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:05:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:05:33 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:05:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:05:48 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:05:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:06:00 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:06:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:06:13 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:06:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:11:18 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:11:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:11:36 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:11:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:11:48 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:11:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:14:11 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:14:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:14:45 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:14:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:21:37 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:21:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:35:59 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:38:48 INFO  : Launching XSDB server: xsdb.bat C:/Travail/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:38:51 INFO  : XSDB server has started successfully.
+19:38:51 INFO  : Processing command line option -hwspec C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper.hdf.
+19:38:51 INFO  : Checking for hwspec changes in the project test_cmd_wrapper_hw_platform_0.
+19:38:54 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1479580702361,  Project:1479564804509
+19:38:54 INFO  : The hardware specification for project 'test_cmd_wrapper_hw_platform_0' is different from C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper.hdf.
+19:38:54 INFO  : Copied contents of C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper.hdf into \test_cmd_wrapper_hw_platform_0\system.hdf.
+19:39:01 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:39:04 INFO  : 
+19:39:05 INFO  : Updating hardware inferred compiler options for cmd_motor.
+19:39:05 INFO  : Clearing existing target manager status.
+19:40:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:40:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+19:40:44 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper_hw_platform_0/test_cmd_wrapper.bit"
+19:40:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:41:02 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Failed to download ELF file
+
+
+    AP transaction error (DP CTRL_STAT=0xf0000021)
+    Error Address = 0x00100000, Size = 0x00000004
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:686)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+19:41:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:41:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+19:41:30 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper_hw_platform_0/test_cmd_wrapper.bit"
+19:42:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:42:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+19:42:16 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper_hw_platform_0/test_cmd_wrapper.bit"
+19:43:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:43:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+19:43:10 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper_hw_platform_0/test_cmd_wrapper.bit"
+19:43:42 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:44:03 INFO  : Launching XSDB server: xsdb.bat C:/Travail/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:44:06 INFO  : XSDB server has started successfully.
+19:44:07 INFO  : Processing command line option -hwspec C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper.hdf.
+19:44:07 INFO  : Checking for hwspec changes in the project test_cmd_wrapper_hw_platform_0.
+19:44:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:44:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+19:44:38 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper_hw_platform_0/test_cmd_wrapper.bit"
+19:44:48 INFO  : ps7_init is completed.
+19:44:49 INFO  : ps7_post_config is completed.
+19:44:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:45:20 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+21:20:23 INFO  : Launching XSDB server: xsdb.bat C:/Travail/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+21:20:31 INFO  : Launching XSDB server: xsdb.bat C:/Travail/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+21:20:33 INFO  : XSDB server has started successfully.
+21:20:33 INFO  : XSDB server has started successfully.
+21:20:39 INFO  : Processing command line option -hwspec C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper.hdf.
+21:20:42 INFO  : Checking for hwspec changes in the project test_cmd_wrapper_hw_platform_0.
+21:20:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:20:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+21:21:00 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper_hw_platform_0/test_cmd_wrapper.bit"
+21:21:40 INFO  : ps7_init is completed.
+21:21:40 INFO  : ps7_post_config is completed.
+21:21:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:03:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:03:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+22:03:27 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper_hw_platform_0/test_cmd_wrapper.bit"
+22:03:34 INFO  : ps7_init is completed.
+22:03:34 INFO  : ps7_post_config is completed.
+22:03:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:07:48 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+23:41:33 INFO  : Launching XSDB server: xsdb.bat C:/Travail/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+23:41:36 INFO  : XSDB server has started successfully.
+23:41:37 INFO  : Processing command line option -hwspec C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper.hdf.
+23:41:37 INFO  : Checking for hwspec changes in the project test_cmd_wrapper_hw_platform_0.
+23:41:39 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1479767573214,  Project:1479580702361
+23:41:39 INFO  : The hardware specification for project 'test_cmd_wrapper_hw_platform_0' is different from C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper.hdf.
+23:41:40 INFO  : Copied contents of C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper.hdf into \test_cmd_wrapper_hw_platform_0\system.hdf.
+23:41:46 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:42:09 INFO  : 
+23:42:10 INFO  : Updating hardware inferred compiler options for cmd_motor.
+23:42:10 INFO  : Clearing existing target manager status.
+00:16:53 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:27:29 INFO  : Launching XSDB server: xsdb.bat C:/Travail/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+11:27:43 INFO  : XSDB server has started successfully.
+11:27:46 INFO  : Processing command line option -hwspec C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.sdk/test_cmd_wrapper.hdf.
+11:27:46 INFO  : Checking for hwspec changes in the project test_cmd_wrapper_hw_platform_0.

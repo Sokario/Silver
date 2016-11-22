@@ -1,0 +1,26 @@
+11:28:29 **** Auto Build of configuration Debug for project cmd_motor ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../cmd_motor_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../cmd_motor_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: cmd_motor.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../cmd_motor_bsp/ps7_cortexa9_0/lib -o "cmd_motor.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cmd_motor.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size cmd_motor.elf  |tee "cmd_motor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22800	   1152	  22564	  46516	   b5b4	cmd_motor.elf
+'Finished building: cmd_motor.elf.size'
+' '
+
+11:28:31 Build Finished (took 2s.11ms)
+
