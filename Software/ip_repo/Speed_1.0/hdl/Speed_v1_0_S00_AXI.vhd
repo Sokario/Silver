@@ -91,6 +91,7 @@ architecture arch_imp of Speed_v1_0_S00_AXI is
     signal counter  : integer range 0 to DIVISION-1 := 0;
     signal value    : signed(2*C_S_AXI_DATA_WIDTH-1 downto 0);
     signal previous : std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0) := (others => '0');
+    signal choice_value : std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 
 	-- AXI4LITE signals
 	signal axi_awaddr	: std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
@@ -401,8 +402,8 @@ begin
     begin
       if (rising_edge (S_AXI_ACLK)) then
         if ( enable = '1' ) then
-          value <= (signed(Increments) - signed(previous)) * to_signed(FREQUENCE, C_S_AXI_DATA_WIDTH);
-          previous <= Increments;
+          value <= (signed(choice_value) - signed(previous)) * to_signed(FREQUENCE, C_S_AXI_DATA_WIDTH);
+          previous <= choice_value;
         else
           value <= value;
           Previous <= Previous;
@@ -410,6 +411,9 @@ begin
       end if;
     end process;
     
+    
+    choice_value <= slv_reg1 when (to_integer(unsigned(slv_reg0)) = 1) else
+                    Increments;
     enable <= '1' when (counter = DIVISION-1) else '0';
     Speed <= std_logic_vector(value(C_S_AXI_DATA_WIDTH-1 downto 0));
     -- User logic ends

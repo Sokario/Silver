@@ -6,7 +6,7 @@
 <Project Version="7" Minor="10" Path="c:/travail/objets/github/silver/software/cmd_motor/cmd_motor.tmp/motor_v1_0_project/motor_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="b6528efb7e994a17b21cbc62e44a6cc8"/>
+    <Option Name="Id" Val="bbf530cb34674f2f91d6a7373bccd1e2"/>
     <Option Name="Part" Val="xc7z010clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
@@ -18,6 +18,7 @@
     <Option Name="BoardPart" Val="digilentinc.com:zybo:part0:1.0"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../ip_repo/servo_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../Travail/Objets/GitHub/Silver/Software/ip_repo/motor_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../ip_repo/pwm_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../Travail/Objets/GitHub/Silver/Software/ip_repo"/>

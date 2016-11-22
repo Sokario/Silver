@@ -394,7 +394,7 @@ begin
       end if;
     end process;
     
-    compare <= to_integer(unsigned(slv_reg0)) when (to_integer(unsigned(slv_reg1)) = 1) else
+    compare <= to_integer(unsigned(slv_reg1)) when (to_integer(unsigned(slv_reg0)) = 1) else
                to_integer(unsigned(Rapport));
     PWM <= '1' when (counter < compare) else
            '0';

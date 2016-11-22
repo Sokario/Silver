@@ -19,6 +19,9 @@
     <Option Name="BoardPart" Val="digilentinc.com:zybo:part0:1.0"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../travail/objets/github/silver/software/ip_repo/encoder_1.0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../travail/objets/github/silver/software/ip_repo/speed_1.0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../travail/objets/github/silver/software/ip_repo/servo_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/motor_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../travail/objets/github/silver/software/ip_repo/pwm_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo"/>
@@ -37,6 +40,18 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="test_cmd.bd" FileRelPathName="hdl/test_cmd.hwdef"/>
+        <CompFileExtendedInfo CompFileName="test_cmd.bd" FileRelPathName="hw_handoff/test_cmd.hwh"/>
+        <CompFileExtendedInfo CompFileName="test_cmd.bd" FileRelPathName="test_cmd_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="test_cmd.bd" FileRelPathName="ip/test_cmd_auto_pc_0/test_cmd_auto_pc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_cmd.bd" FileRelPathName="hw_handoff/test_cmd_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="test_cmd.bd" FileRelPathName="ip/test_cmd_motor_1_0/test_cmd_motor_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_cmd.bd" FileRelPathName="hdl/test_cmd.vhd"/>
+        <CompFileExtendedInfo CompFileName="test_cmd.bd" FileRelPathName="ip/test_cmd_rst_processing_system7_0_100M_1/test_cmd_rst_processing_system7_0_100M_1.xci"/>
+        <CompFileExtendedInfo CompFileName="test_cmd.bd" FileRelPathName="ip/test_cmd_processing_system7_0_axi_periph_1/test_cmd_processing_system7_0_axi_periph_1.xci"/>
+        <CompFileExtendedInfo CompFileName="test_cmd.bd" FileRelPathName="ip/test_cmd_processing_system7_0_0/test_cmd_processing_system7_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_cmd.bd" FileRelPathName="ip/test_cmd_xbar_0/test_cmd_xbar_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_cmd.bd" FileRelPathName="ip/test_cmd_motor_0_0/test_cmd_motor_0_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/test_cmd/hdl/test_cmd_wrapper.vhd">
         <FileInfo>

@@ -850,8 +850,8 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>encoder</xilinx:displayName>
-      <xilinx:coreRevision>6</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2016-09-28T12:57:39Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>7</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2016-11-22T10:54:36Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="xilinx.com:user:encoder:1.0_ARCHIVE_LOCATION">C:/Travail/Objets/GitHub/Silver/Software/ip_repo/encoder_1.0</xilinx:tag>
       </xilinx:tags>

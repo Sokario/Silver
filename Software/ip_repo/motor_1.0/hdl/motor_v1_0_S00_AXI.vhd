@@ -17,8 +17,9 @@ entity motor_v1_0_S00_AXI is
 	port (
 		-- Users to add ports here
         Rapport : in std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
-        Sens : out std_logic;
+        Sens    : out std_logic;
         PWM : out std_logic;
+        Enable  : out std_logic;
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -397,7 +398,7 @@ begin
       end if;
     end process;
     
-    speed <= to_integer(signed(slv_reg0)) when (to_integer(unsigned(slv_reg1)) = 1) else
+    speed <= to_integer(signed(slv_reg1)) when (to_integer(unsigned(slv_reg0)) = 1) else
              to_integer(signed(Rapport));
     compare <= -speed when (speed < 0) else
                speed;
@@ -407,6 +408,8 @@ begin
             '0';
     PWM <= not(vitesse) when (speed < 0) else
            vitesse;
+    Enable <= '1' when (to_integer(unsigned(slv_reg3)) = 1) else
+              '0';
 	-- User logic ends
 
 end arch_imp;
