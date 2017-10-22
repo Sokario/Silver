@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-| Date         : Mon Nov 21 23:30:49 2016
+| Date         : Thu Dec 08 15:36:30 2016
 | Host         : LogOut-Lenovo running 64-bit major release  (build 9200)
 | Command      : report_utilization -file test_cmd_wrapper_utilization_synth.rpt -pb test_cmd_wrapper_utilization_synth.pb
 | Design       : test_cmd_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 1048 |     0 |     17600 |  5.95 |
-|   LUT as Logic             |  978 |     0 |     17600 |  5.56 |
+| Slice LUTs*                | 1066 |     0 |     17600 |  6.06 |
+|   LUT as Logic             |  996 |     0 |     17600 |  5.66 |
 |   LUT as Memory            |   70 |     0 |      6000 |  1.17 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
 |     LUT as Shift Register  |   70 |     0 |           |       |
@@ -152,8 +152,8 @@ Table of Contents
 | LUT6     |  322 |                  LUT |
 | LUT3     |  284 |                  LUT |
 | LUT1     |  183 |                  LUT |
-| LUT4     |  166 |                  LUT |
-| LUT5     |  131 |                  LUT |
+| LUT4     |  176 |                  LUT |
+| LUT5     |  139 |                  LUT |
 | BIBUF    |  130 |                   IO |
 | LUT2     |   63 |                  LUT |
 | FDSE     |   59 |         Flop & Latch |

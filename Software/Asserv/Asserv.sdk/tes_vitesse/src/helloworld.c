@@ -51,21 +51,35 @@
 #include "xil_io.h"
 #include "sleep.h"
 
-#define encodeur_d 0x43C00000 //This value is found in the Address editor tab in Vivado (next to Diagram tab)
-#define speed_d 0x43c10000
+#define encoder_l 0x43C00000 //This value is found in the Address editor tab in Vivado (next to Diagram tab)
+#define encoder_r 0x43c10000
+#define motor_l 0x43c20000
+#define motor_r 0x43c30000
 
 int main()
 {
-	int value_d = 0;
+	int value_l = 0, value_r = 0, ratio_l = 800, ratio_r = 800;
+	int odometer = 0;
     init_platform();
 
-    while (1){
-    value_d = Xil_In32(encodeur_d);
-    xil_printf("Encodeur Droit: %d impulsions\n", value_d);
-    value_d = Xil_In32(speed_d);
-    xil_printf("Vitesse Droit: %d impulsions.s\n", value_d);
-    usleep(200000);
+	Xil_Out32(motor_l, 1); // slv_reg1 modification
+	Xil_Out32(motor_r, 1); // slv_reg1 modification
+    while (odometer >= -49152)
+    {
+		value_l = Xil_In32(encoder_l);
+		value_r = Xil_In32(encoder_r);
+
+		xil_printf("Encodeur Gauche: %d impulsions\n", value_l);
+		xil_printf("Encodeur Droit: %d impulsions\n", value_r);
+		odometer = (value_l + value_r) / 2;
+
+		Xil_Out32(motor_l + 4, -ratio_l); // slv_reg1 modification
+		Xil_Out32(motor_r + 4, -ratio_r); // slv_reg1 modification
+		usleep(20000);			//delay
     }
+
+	Xil_Out32(motor_l + 4, 0); // slv_reg1 modification
+	Xil_Out32(motor_r + 4, 0); // slv_reg1 modification
 
     cleanup_platform();
     return 0;

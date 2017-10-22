@@ -1,7 +1,7 @@
 --Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
---Date        : Wed Sep 28 17:02:43 2016
+--Date        : Thu Dec 08 15:38:08 2016
 --Host        : LogOut-Lenovo running 64-bit major release  (build 9200)
 --Command     : generate_target test_asserv_wrapper.bd
 --Design      : test_asserv_wrapper
@@ -34,8 +34,14 @@ entity test_asserv_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
-    QuadA : in STD_LOGIC;
-    QuadB : in STD_LOGIC
+    PWM_L : out STD_LOGIC;
+    PWM_R : out STD_LOGIC;
+    QuadA_L : in STD_LOGIC;
+    QuadA_R : in STD_LOGIC;
+    QuadB_L : in STD_LOGIC;
+    QuadB_R : in STD_LOGIC;
+    Sens_L : out STD_LOGIC;
+    Sens_R : out STD_LOGIC
   );
 end test_asserv_wrapper;
 
@@ -63,8 +69,14 @@ architecture STRUCTURE of test_asserv_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    QuadA : in STD_LOGIC;
-    QuadB : in STD_LOGIC
+    QuadA_R : in STD_LOGIC;
+    QuadB_R : in STD_LOGIC;
+    QuadA_L : in STD_LOGIC;
+    QuadB_L : in STD_LOGIC;
+    Sens_L : out STD_LOGIC;
+    PWM_L : out STD_LOGIC;
+    Sens_R : out STD_LOGIC;
+    PWM_R : out STD_LOGIC
   );
   end component test_asserv;
 begin
@@ -91,7 +103,13 @@ test_asserv_i: component test_asserv
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
-      QuadA => QuadA,
-      QuadB => QuadB
+      PWM_L => PWM_L,
+      PWM_R => PWM_R,
+      QuadA_L => QuadA_L,
+      QuadA_R => QuadA_R,
+      QuadB_L => QuadB_L,
+      QuadB_R => QuadB_R,
+      Sens_L => Sens_L,
+      Sens_R => Sens_R
     );
 end STRUCTURE;

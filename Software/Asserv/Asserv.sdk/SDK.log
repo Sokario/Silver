@@ -180,3 +180,136 @@ Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors
 17:31:18 INFO  : ps7_post_config is completed.
 17:31:19 INFO  : Processor reset is completed for ps7_cortexa9_0
 20:29:47 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:42:15 INFO  : Launching XSDB server: xsdb.bat C:/Travail/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:42:17 INFO  : XSDB server has started successfully.
+15:42:18 INFO  : Processing command line option -hwspec C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper.hdf.
+15:42:18 INFO  : Checking for hwspec changes in the project test_asserv_wrapper_hw_platform_0.
+15:42:21 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1481208094449,  Project:1475075158189
+15:42:21 INFO  : The hardware specification for project 'test_asserv_wrapper_hw_platform_0' is different from C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper.hdf.
+15:42:21 INFO  : Copied contents of C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper.hdf into \test_asserv_wrapper_hw_platform_0\system.hdf.
+15:42:46 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+15:42:59 INFO  : 
+15:43:00 INFO  : Updating hardware inferred compiler options for tes_vitesse.
+15:43:00 INFO  : Clearing existing target manager status.
+15:45:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:45:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+15:45:57 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+15:46:11 INFO  : ps7_init is completed.
+15:46:12 INFO  : ps7_post_config is completed.
+15:46:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:47:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:47:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+15:47:42 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+15:47:50 INFO  : ps7_init is completed.
+15:47:50 INFO  : ps7_post_config is completed.
+15:47:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:40:17 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:40:51 INFO  : Launching XSDB server: xsdb.bat C:/Travail/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:40:54 INFO  : XSDB server has started successfully.
+16:40:55 INFO  : Processing command line option -hwspec C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper.hdf.
+16:40:55 INFO  : Checking for hwspec changes in the project test_asserv_wrapper_hw_platform_0.
+16:40:58 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1481211257366,  Project:1481208094449
+16:40:58 INFO  : The hardware specification for project 'test_asserv_wrapper_hw_platform_0' is different from C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper.hdf.
+16:40:58 INFO  : Copied contents of C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper.hdf into \test_asserv_wrapper_hw_platform_0\system.hdf.
+16:41:07 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:41:11 INFO  : 
+16:41:12 INFO  : Updating hardware inferred compiler options for tes_vitesse.
+16:41:12 INFO  : Clearing existing target manager status.
+16:41:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:41:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+16:41:41 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+16:41:53 INFO  : ps7_init is completed.
+16:41:53 INFO  : ps7_post_config is completed.
+16:41:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:41:57 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:42:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:48:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:48:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+16:48:25 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+16:48:32 INFO  : ps7_init is completed.
+16:48:32 INFO  : ps7_post_config is completed.
+16:48:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:49:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:49:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+16:49:20 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+16:49:28 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:49:38 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:1011)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:534)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+16:49:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:49:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+16:49:47 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+16:49:53 INFO  : ps7_init is completed.
+16:49:53 INFO  : ps7_post_config is completed.
+16:49:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:52:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:52:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+16:52:28 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+16:52:34 INFO  : ps7_init is completed.
+16:52:34 INFO  : ps7_post_config is completed.
+16:52:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:08:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:08:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:08:48 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+17:09:12 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:1011)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:534)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:09:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:09:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:09:28 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+17:09:39 INFO  : ps7_init is completed.
+17:09:39 INFO  : ps7_post_config is completed.
+17:09:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:10:06 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:10:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:10:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:10:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:10:52 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+17:11:00 INFO  : ps7_init is completed.
+17:11:00 INFO  : ps7_post_config is completed.
+17:11:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:12:11 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:12:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:14:43 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:14:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:15:22 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:15:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:16:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:16:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:16:41 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+17:16:48 INFO  : ps7_init is completed.
+17:16:48 INFO  : ps7_post_config is completed.
+17:16:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:22:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:22:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:22:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:22:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279771968A" && level==0} -index 1' command is executed.
+17:22:55 INFO  : FPGA configured successfully with bitstream "C:/Travail/Objets/GitHub/Silver/Software/Asserv/Asserv.sdk/test_asserv_wrapper_hw_platform_0/test_asserv_wrapper.bit"
+17:23:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:15:22 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

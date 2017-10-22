@@ -15,14 +15,20 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==test_asserv_pro
 # IP: bd/test_asserv/ip/test_asserv_rst_processing_system7_0_100M_0/test_asserv_rst_processing_system7_0_100M_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==test_asserv_rst_processing_system7_0_100M_0 || ORIG_REF_NAME==test_asserv_rst_processing_system7_0_100M_0}]
 
-# IP: bd/test_asserv/ip/test_asserv_Speed_0_2/test_asserv_Speed_0_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==test_asserv_Speed_0_2 || ORIG_REF_NAME==test_asserv_Speed_0_2}]
-
 # IP: bd/test_asserv/ip/test_asserv_xbar_0/test_asserv_xbar_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==test_asserv_xbar_0 || ORIG_REF_NAME==test_asserv_xbar_0}]
 
 # IP: bd/test_asserv/ip/test_asserv_encoder_0_3/test_asserv_encoder_0_3.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==test_asserv_encoder_0_3 || ORIG_REF_NAME==test_asserv_encoder_0_3}]
+
+# IP: bd/test_asserv/ip/test_asserv_encoder_1_0/test_asserv_encoder_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==test_asserv_encoder_1_0 || ORIG_REF_NAME==test_asserv_encoder_1_0}]
+
+# IP: bd/test_asserv/ip/test_asserv_motor_0_0/test_asserv_motor_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==test_asserv_motor_0_0 || ORIG_REF_NAME==test_asserv_motor_0_0}]
+
+# IP: bd/test_asserv/ip/test_asserv_motor_1_0/test_asserv_motor_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==test_asserv_motor_1_0 || ORIG_REF_NAME==test_asserv_motor_1_0}]
 
 # IP: bd/test_asserv/ip/test_asserv_auto_pc_0/test_asserv_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==test_asserv_auto_pc_0 || ORIG_REF_NAME==test_asserv_auto_pc_0}]

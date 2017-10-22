@@ -55,6 +55,9 @@ set rc [catch {
   set_property parent.project_path C:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.xpr [current_project]
   set_property ip_repo_paths {
   c:/Travail/Objets/GitHub/Silver/Software/Cmd_motor/Cmd_motor.cache/ip
+  C:/travail/objets/github/silver/software/ip_repo/encoder_1.0
+  C:/travail/objets/github/silver/software/ip_repo/speed_1.0
+  C:/travail/objets/github/silver/software/ip_repo/servo_1.0
   C:/Travail/Objets/GitHub/Silver/Software/ip_repo/motor_1.0
   C:/travail/objets/github/silver/software/ip_repo/pwm_1.0
   C:/Travail/Objets/GitHub/Silver/Software/ip_repo

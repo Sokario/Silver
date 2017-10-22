@@ -193,22 +193,23 @@
 #set_property PACKAGE_PIN K14 [get_ports {ja_p[3]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {ja_p[3]}]
 
+###PMOD de merde!!!!!!!!!!!!!!!! Dessus  / Dessous => U20 <-> T20 | V20 <-> Y19
 ##Pmod Header JB
 ##IO_L15N_T2_DQS_34
-#set_property PACKAGE_PIN U20 [get_ports {jb_n[0]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {jb_n[0]}]
+#set_property PACKAGE_PIN U20 [get_ports QuadA_L]
+#set_property IOSTANDARD LVCMOS33 [get_ports QuadA_L]
 
 ##IO_L15P_T2_DQS_34
-#set_property PACKAGE_PIN T20 [get_ports {jb_p[0]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {jb_p[0]}]
+#set_property PACKAGE_PIN T20 [get_ports QuadA_R]
+#set_property IOSTANDARD LVCMOS33 [get_ports QuadA_R]
 
 ##IO_L16N_T2_34
-#set_property PACKAGE_PIN W20 [get_ports {jb_n[1]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {jb_n[1]}]
+#set_property PACKAGE_PIN W20 [get_ports QuadB_L]
+#set_property IOSTANDARD LVCMOS33 [get_ports QuadB_L]
 
 ##IO_L16P_T2_34
-#set_property PACKAGE_PIN V20 [get_ports {jb_p[1]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {jb_p[1]}]
+#set_property PACKAGE_PIN V20 [get_ports QuadB_R]
+#set_property IOSTANDARD LVCMOS33 [get_ports QuadB_R]
 
 ##IO_L17N_T2_34
 #set_property PACKAGE_PIN Y19 [get_ports {jb_n[2]}]
@@ -294,12 +295,12 @@
 
 ##Pmod Header JE
 ##IO_L4P_T0_34
-#set_property PACKAGE_PIN V12 [get_ports {je[0]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {je[0]}]
+#set_property PACKAGE_PIN V12 [get_ports QuadA_R]
+#set_property IOSTANDARD LVCMOS33 [get_ports QuadA_R]
 
 ##IO_L18N_T2_34
-#set_property PACKAGE_PIN W16 [get_ports {je[1]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {je[1]}]
+#set_property PACKAGE_PIN W16 [get_ports QuadA_L]
+#set_property IOSTANDARD LVCMOS33 [get_ports QuadA_L]
 
 ##IO_25_35
 set_property PACKAGE_PIN J15 [get_ports Sens_R]
@@ -310,12 +311,12 @@ set_property PACKAGE_PIN H15 [get_ports Sens_L]
 set_property IOSTANDARD LVCMOS33 [get_ports Sens_L]
 
 ##IO_L3N_T0_DQS_34
-#set_property PACKAGE_PIN V13 [get_ports {je[4]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {je[4]}]
+#set_property PACKAGE_PIN V13 [get_ports QuadB_R]
+#set_property IOSTANDARD LVCMOS33 [get_ports QuadB_R]
 
 ##IO_L9N_T1_DQS_34
-#set_property PACKAGE_PIN U17 [get_ports {je[5]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {je[5]}]
+#set_property PACKAGE_PIN U17 [get_ports QuadB_L]
+#set_property IOSTANDARD LVCMOS33 [get_ports QuadB_L]
 
 ##IO_L20P_T3_34
 set_property PACKAGE_PIN T17 [get_ports PWM_R]
